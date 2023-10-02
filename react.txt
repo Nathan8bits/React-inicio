@@ -1,0 +1,30 @@
+verifique as versoes do Node e do npm: 
+	node -v
+	npm -v
+
+crie um app com o comando a seguir no terminal vsCode:
+	npx create-react-app my-app
+
+o que foi gerado?
+	node_modules: modulos do node para o react funcionar
+	public:
+	->index.html //html root onde o js gerará os elementos
+	src: nessa pasta tem o css e o js
+	->index.js // onde adicionamos os elementos
+	->app.js // onde tá a pagina inicial
+	
+em seguida: 
+	cd my-app	
+	npm start
+
+	ctrl + c, retorna pro terminal e digitando 's'
+
+Aula 02
+
+	*JSX é a maneira de escrever HTML com o React
+	*Podemos interpolar variaveis, inserindo ela entre {}
+	*É possivel executar funcoes em JSX;
+	*Inserir valores em atributos de tags também é válido em JSX;
+
+obs:o return nao aceita q todas as tags estejam no mesmo nivel, ou seja, 
+deve haver uma div que contenha todas as outras.
