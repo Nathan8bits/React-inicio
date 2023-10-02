@@ -19,7 +19,7 @@ em seguida:
 
 	ctrl + c, retorna pro terminal e digitando 's'
 
-Aula 02
+Aula 04
 
 	*JSX é a maneira de escrever HTML com o React
 	*Podemos interpolar variaveis, inserindo ela entre {}
@@ -28,3 +28,34 @@ Aula 02
 
 obs:o return nao aceita q todas as tags estejam no mesmo nivel, ou seja, 
 deve haver uma div que contenha todas as outras.
+
+Aula 05
+	Componentes
+	*permite dividir a aplicação em partes;
+	*Os componentes rendeziram jSX, assim como App.js(que é um componente);
+	*Criar um arquivo de componente;
+	*Importar um componente;
+	*Nomalmente ficm em uma pasta chamada components;
+
+	Crie uma pasta dentro de src chamada components.
+	Adicione o nome de seu componente com camelCase, inicial maiuscula, 
+extensão '.js' .ex: 
+	componente HelloWorld
+	```
+	function HelloWorld() {
+	
+	return (
+		<div></div>
+	)
+	}
+	export default HelloWorld //Exportr com o nome do componente
+	´´´´
+	
+	App.js
+	```
+	import HelloWorld form "./components/HelloWorld"
+	...
+	<div className='App'>
+		<helloWorld/>
+	</div>
+	´´´
