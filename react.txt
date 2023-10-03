@@ -59,3 +59,16 @@ extensão '.js' .ex:
 		<helloWorld/>
 	</div>
 	´´´
+
+Aula 06
+	Props
+	*As props sao valores passados para os componentes;
+	*Podemos deixa-los dinamicos mudando a execucao por causa do valor
+da props
+	*E prescisa ser resgatado dentro de ua propriedade/argumento
+chamada props na funcao de definicao do componentes;
+	*Props sao somente leitura.
+ 
+	Ao usar um componente já declarado e importado é possivel, no uso da tag do
+componente, passar valores para atributos de objetos, argumentos das funcoes desses 
+componentes.
