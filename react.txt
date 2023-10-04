@@ -19,7 +19,7 @@ em seguida:
 
 	ctrl + c, retorna pro terminal e digitando 's'
 
-Aula 04
+Aula 03
 
 	*JSX é a maneira de escrever HTML com o React
 	*Podemos interpolar variaveis, inserindo ela entre {}
@@ -29,7 +29,7 @@ Aula 04
 obs:o return nao aceita q todas as tags estejam no mesmo nivel, ou seja, 
 deve haver uma div que contenha todas as outras.
 
-Aula 05
+Aula 04
 	Componentes
 	*permite dividir a aplicação em partes;
 	*Os componentes rendeziram jSX, assim como App.js(que é um componente);
@@ -38,7 +38,7 @@ Aula 05
 	*Nomalmente ficm em uma pasta chamada components;
 
 	Crie uma pasta dentro de src chamada components.
-	Adicione o nome de seu componente com camelCase, inicial maiuscula, 
+	Adicione o nome de seu componente com camelCase e inicial maiuscula, 
 extensão '.js' .ex: 
 	componente HelloWorld
 	```
@@ -60,7 +60,8 @@ extensão '.js' .ex:
 	</div>
 	´´´
 
-Aula 06
+
+Aula 05
 	Props
 	*As props sao valores passados para os componentes;
 	*Podemos deixa-los dinamicos mudando a execucao por causa do valor
@@ -72,3 +73,24 @@ chamada props na funcao de definicao do componentes;
 	Ao usar um componente já declarado e importado é possivel, no uso da tag do
 componente, passar valores para atributos de objetos, argumentos das funcoes desses 
 componentes.
+	...
+	<Pessoa nome="Nathan" idade="18" />
+	...
+
+
+Aula 06
+	O CSS pode ser adicionado de forma global na aplicação, por meio do arquivo 
+index.css por exemplo;
+	*o index.css é chamado pelo index.js
+
+	Porém, é possivel estilizar a nivel de componentes para isso utilizamos o
+CSS modules. Basta criar um arquivo: NomeComponente.module.css, e chamar este CSS no
+componente.
+	*não é possivel criar classes, nesses arquivos com "-".
+	O componente que for utilizar um determinado arquivo css deve fazê-lo da 
+seguinte forma:
+	import styles from './NomeDoEstilo.module.css'
+	...
+	<div className={styles.classeA}
+	*styles torna-se um objeto onde seus atributos são as classes declaradas no 
+arquivo CSS importado.
